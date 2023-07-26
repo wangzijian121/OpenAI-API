@@ -1,0 +1,28 @@
+---
+tags:
+  - 获取与小宇的所有会话
+description: 获取与小宇所有聊天
+
+responses:
+  200:
+    description: OK
+    schema:
+      type: object
+      example: {
+        "data": {
+          "chats": [
+            {
+              "id": 1,
+              "name": "政企小助手"
+            },
+            {
+              "id": 2,
+              "name": "国防部小助手"
+            }
+          ],
+          "total": 2
+        },
+        "status": "success"
+      }
+
+

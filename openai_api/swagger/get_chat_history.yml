@@ -1,0 +1,49 @@
+---
+tags:
+  - 获取会话历史
+description: 获取和小宇会话历史
+parameters:
+
+  - name: chat_id
+    in: query
+    schema:
+      type: integer
+      description: 会话ID
+      example: 10
+
+responses:
+  200:
+    description: OK
+    schema:
+      type: object
+      example: {
+        "data": {
+          "id": 1,
+          "name": "政企小助手",
+          "session": [
+            {
+              "content": "我叫小宇，是个个人助手.",
+              "role": "system"
+            },
+            {
+              "content": "我说一个词，你说他的反义词",
+              "role": "user"
+            },
+            {
+              "content": "好的，请告诉我你要我找的词",
+              "role": "system"
+            },
+            {
+              "content": "黑色",
+              "role": "user"
+            },
+            {
+              "content": "白色",
+              "role": "system"
+            }
+          ]
+        },
+        "status": "success"
+      }
+
+

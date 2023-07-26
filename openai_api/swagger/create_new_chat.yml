@@ -1,0 +1,32 @@
+---
+tags:
+  - 创建新会话
+description: 创建新会话
+parameters:
+  - name: name
+    in: query
+    schema:
+      type: string
+      description: 名字
+      example: "安安"
+
+  - name: description
+    in: query
+    schema:
+      type: string
+      description: 描述
+      example: "我是一个专注火电安全咨询的专家机器人"
+
+
+
+responses:
+  200:
+    description: OK
+    example: {
+      "status": "success",
+      "data": {
+        "id": "9527"
+      }
+    }
+
+

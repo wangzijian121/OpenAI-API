@@ -1,0 +1,23 @@
+---
+tags:
+  - 清理会话
+description: 清理会话
+parameters:
+  - name: id
+    in: query
+    schema:
+      type: int
+      description: 聊天ID
+      example: 1
+
+responses:
+  200:
+    description: OK
+    example: {
+      "status": "success",
+      "data": {
+        "id": "9527"
+      }
+    }
+
+
